@@ -234,7 +234,7 @@ h2 {
 }
 
 .overlay a:hover {
-  color: #bb3e03;
+  color: #000;
 }
 
 .overlay-content {
@@ -410,7 +410,7 @@ a:focus {
     color-stop(70%, transparent),
     color-stop(70%, #9c6644)
   );
-  background: linear-gradient(to bottom, transparent 70%, #9c6644 70%);
+  background: linear-gradient(to bottom, transparent 70%, #ee678f 70%);
   padding: 0 25px 45px 25px;
 }
 
@@ -433,7 +433,7 @@ a:focus {
     color-stop(70%, transparent),
     color-stop(70%, #9c6644)
   );
-  background: linear-gradient(to bottom, transparent 70%, #9c6644 70%);
+  background: linear-gradient(to bottom, transparent 70%, #ee678f 70%);
   padding: 0 25px 45px 25px;
 }
 
@@ -450,7 +450,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #bb3e03;
+  background-color: #ee678f;
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid #bb3e03;
@@ -543,7 +543,7 @@ a:focus {
 .contact_section .contact_form-container button {
   display: inline-block;
   padding: 10px 60px;
-  background-color: #bb3e03;
+  background-color: #ee678f;
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid #bb3e03;
@@ -554,8 +554,8 @@ a:focus {
 }
 
 .contact_section .contact_form-container button:hover {
-  background-color: transparent;
-  color: #bb3e03;
+  background-color: #fff;
+  color: #9c6644;
 }
 
 .contact_bg_box {
@@ -681,7 +681,7 @@ a:focus {
   height: 45px;
   border: none;
   opacity: 1;
-  background-color: #bb3e03;
+  background-color: #ee678f;
   color: #ffffff;
   border-radius: 100%;
   -webkit-transform: translateY(-50%);
@@ -691,7 +691,7 @@ a:focus {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #9c6644;
+  background-color: #ee678f;
 }
 
 .client_section .carousel-control-prev {
@@ -746,7 +746,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #bb3e03;
+  color: #000;
 }
 
 .footer_section .footer-logo {
@@ -788,7 +788,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #9c6644;
+  color: #000;
 }
 
 .footer_section .map_container {
