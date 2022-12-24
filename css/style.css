@@ -326,7 +326,7 @@ a:focus {
   background-color: #9c6644;
   color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #bb3e03;
+  border: 1px solid #ff006e;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: 10px;
@@ -453,7 +453,7 @@ a:focus {
   background-color: #ee678f;
   color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #bb3e03;
+  border: 1px solid #ff006e;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -516,7 +516,7 @@ a:focus {
 }
 
 .contact_section .contact_form-container input:focus {
-  border-bottom: 1px solid #bb3e03;
+  border-bottom: 1px solid #ff006e;
 }
 
 .contact_section
@@ -546,7 +546,7 @@ a:focus {
   background-color: #ee678f;
   color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #bb3e03;
+  border: 1px solid #ff006e;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   text-transform: uppercase;
