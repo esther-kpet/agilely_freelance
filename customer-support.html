@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+
+    <title>Privacy Policy |Agilely</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- End of Favicon -->
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- header section start -->
+
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a href="index.html" class="navbar-brand">
+            <span  style="color:#000">
+              <div class="interactive_container">
+                <div class="typewriter">Agilely Freelance</div>
+              </div>
+            </span>
+          </a>
+          <div class="" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"></span>
+                <span class="s-2"></span>
+                <span class="s-3"></span>
+              </button>
+              <div class="overlay" id="myNav">
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="book.html">Book Service/Appointment</a>
+                  <a href="testimonial.html">Testimonials</a>
+                  <a href="cancellation-n-refund-policy.html">Cancellation & Refund Policy</a>
+                  <a href="customer-support.html">Customer Support</a>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                  <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+<section>
+<div class="container" style="margin-top: 100px;">
+<input id="ss360-smartFaq-search" type="text" placeholder="🔍 How can we help you?"><div id="ss360-smartFaq"></div>
+<script type="application/ld+json" id="ss360FaqData">{"@context": "http://schema.org/","@type": "FAQPage", "mainEntity": [{"@type":"Question","name":"What is Agilely Freelance?","genre":"General","acceptedAnswer":{"@type":"Answer","text":"Agilely Freelance is a freelancing agency that offers various services ranging from e-commerce web development to UI UX designing\npassing by email marketing and much more. As long as your project needs to be live and accessible on the internet, I am sure we can help. For more information, feel free to reach out via one of our contact information available on the website. "},"identifier":8365369},{"@type":"Question","name":"Can I get refunded?","genre":"General","acceptedAnswer":{"@type":"Answer","text":"We are always pleased to witness how our products benefit you in achieving your objectives. However, please read the refund section if you believe you require a refund. After reading the refund policy terms for the same, feel free to initiate the procedure or reach out."},"identifier":9621706}]}</script>
+<script type="application/javascript"> function ss360SearchFaq(e, searchType) { var sfcn = 'ss360-search-found'; var sffrd = 'ss360-search-filtered'; var query = ''; var idSearch = false; if (e !== undefined && e.target !== undefined) { query = e.target.value; } else { query = e; idSearch = true; } if (searchType !== undefined && searchType === 'query') { idSearch = false; } if (!idSearch) { query = query.toLowerCase().trim(); var urlSearch = window.location.search; if (urlSearch.indexOf('faq-query') > -1) { urlSearch = urlSearch.replace(/faq-query=(.*)/,'faq-query=' + query) } else { if (urlSearch.indexOf('?') > -1) { urlSearch += '&'; } else { urlSearch += '?'; } urlSearch += 'faq-query=' + query; } window.history.pushState('', '', urlSearch); } var faqSearch = query.split(' '); document.querySelectorAll('.ss360-qa').forEach(function (item) { var t = item.textContent.toLowerCase(); var match = query.length > 0; if (idSearch) { match = item.id === 'ss360-qa-' + query; } else { for (var i = 0; i < faqSearch.length; i++) { if (t.indexOf(faqSearch[i]) < 0) { match = false; break; } } } if (match) { if (!item.classList.contains(sfcn)) { item.classList.add(sfcn); } item.classList.remove(sffrd); } else { item.classList.remove(sfcn); if (query.length > 0) { item.classList.add(sffrd) } else { item.classList.remove(sffrd); } } }); } function ss360BuildFaq() { var faqContainer = document.getElementById('ss360-smartFaq'); faqContainer.innerHTML = ''; function qaClickListener(e) { if (this.className.indexOf('ss360-qa-active') > -1 || this.className.indexOf('ss360-search-found') > -1) { this.className = this.className.replace(' ss360-qa-active', ''); this.className = this.className.replace(' ss360-search-found', ''); } else if (this.className.indexOf('ss360-qa') > -1) { this.className += ' ss360-qa-active' } } var ldjson = document.getElementById('ss360FaqData').innerHTML; var faqJson = JSON.parse(ldjson); var qaArray = faqJson['mainEntity']; var categories = []; for (var i = 0; i < qaArray.length; i++) { var qaArrayElement = qaArray[i]; var category = qaArrayElement['genre']; var question = qaArrayElement['name']; var answer = qaArrayElement['acceptedAnswer']['text']; var qaElement = document.createElement('div'); qaElement.className = 'ss360-qa'; if (category !== undefined && category !== null) { qaElement.className += ' qa-category-' + category.replace(/[^a-z0-9]/gi, '-'); if (categories.indexOf(category) < 0 && category.trim().length > 0) { categories.push(category); } qaElement.dataset.category = category.replace(/"/g, '-'); } qaElement.onclick = qaClickListener; qaElement.id = 'ss360-qa-' + qaArrayElement['identifier']; var qaQuestionElement = document.createElement('h3'); qaQuestionElement.className = 'ss360-question'; qaQuestionElement.innerHTML = question; qaElement.appendChild(qaQuestionElement); var qaAnswerElement = document.createElement('p'); qaAnswerElement.className = 'ss360-answer'; qaAnswerElement.innerHTML = answer; qaElement.appendChild(qaAnswerElement); faqContainer.appendChild(qaElement); } if (categories.length > 0) { var categoryFilter = document.createElement('div'); for (var i = 0; i < categories.length; i++) { var cat = categories[i]; function qaCategoryClickListener(e) { var thisCategory = 'qa-category-' + this.innerHTML.replace(/[^a-z0-9]/gi, '-'); var thisCategoryActive = this.className.indexOf('qa-category-active') > -1; var qas = document.getElementsByClassName('ss360-qa'); var hasAlNumChars = thisCategory.replace('qa-category-', '').replace(/-/g, '').length > 0; console.log(hasAlNumChars); for (var j = 0; j < qas.length; j++) { var element = qas.item(j); var currentClassName = element.className; var categoryDataName = element.dataset.category; if (thisCategoryActive) { element.style = 'display:block'; } else { if (hasAlNumChars && currentClassName.indexOf(thisCategory) > -1) { element.style = 'display:block'; } else if (!hasAlNumChars && categoryDataName === this.innerHTML.replace(/"/g, '-')) { element.style = 'display:block'; } else { element.style = 'display:none'; } } } var scat = document.getElementsByClassName('ss360-category'); for (var j = 0; j < scat.length; j++) { var element = scat.item(j); element.className = element.className.replace(' qa-category-active', ''); } if (!thisCategoryActive) { this.className += ' qa-category-active'; } } var catElement = document.createElement('div'); catElement.className = 'ss360-category'; catElement.innerHTML = cat; catElement.onclick = qaCategoryClickListener; categoryFilter.appendChild(catElement); } faqContainer.insertBefore(categoryFilter, faqContainer.firstChild); } } document.addEventListener("DOMContentLoaded", function () { ss360BuildFaq(); var queryDict = {}; location.search.substr(1).split("&").forEach(function (item) { queryDict[item.split("=")[0]] = item.split("=")[1] }); var faqSearchInput = document.getElementById('ss360-smartFaq-search'); var qaid = queryDict['faq-id']; var faqQuery = queryDict['faq-query']; if (qaid !== undefined) { ss360SearchFaq(qaid, 'identifier'); } else if (faqQuery !== undefined) { faqQuery = decodeURIComponent(faqQuery).replace('+', ' '); faqSearchInput.value = faqQuery; ss360SearchFaq(faqQuery, 'query'); } faqSearchInput.onkeyup = ss360SearchFaq; });</script>
+<style> .ss360-question { padding: 10px; cursor: pointer; margin: 0; } .ss360-question:before { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; content: '+ '; position: relative; bottom: 2px; color: #333; } .ss360-qa.ss360-qa-active .ss360-question:before { content: '- '; } .ss360-answer { margin-top: 0; padding: 20px 31px; white-space: pre-line; display: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; line-height: 1.4em; background-color: #f4f4f4; } .ss360-qa.ss360-qa-active .ss360-answer, .ss360-qa.ss360-search-found .ss360-answer { display: block; } .ss360-search-found .ss360-question, .ss360-search-found .ss360-answer { background-color: #d9fdd4; } .ss360-search-filtered { display: none; } .ss360-category { display: inline-block; padding: 10px; cursor: pointer; margin: 10px; margin-left: 0; border-radius: 12px; background-color: #f1f1f1; } .qa-category-active { background-color: #3d8fff; color: white; } #ss360-smartFaq-search { padding: 10px } h3.ss360-question { font-weight: normal; }</style>
+
+</div>
+   </section>
+
+      <!-- start of footer -->
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <div class="footer_content">
+              <h4>Reach at...</h4>
+              <div class="contact_link_box">
+                <a target="_blank" href="https://goo.gl/maps/7CqCitraUJ5pEX5e9"
+                  ><i class="fa fa-map-marker" aria-hidden="true"style="color:#fff;"></i>
+                  <span style="color:#fff">Location</span></a
+                >
+                <a href="tel:+917340922428"
+                  ><i class="fa fa-phone" aria-hidden="true" style="color:#fff;"></i>
+                  <span style="color:#fff">Get in touch</span></a
+                >
+                <a href="mailto:dev@estherkpetemey.com"
+                  ><i class="fa fa-envelope" aria-hidden="true" style="color:#fff;"></i>
+                  <span style="color:#fff">Write an e-mail</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer_detail">
+              <a href="#" class="footer-logo"> Agilely Freelance </a>
+              <p>
+                "Collaboration, adaptability and
+            <br> promtness in achieving high-performing results."
+              </p>
+              <div class="footer_social">
+                <a href="https://www.estherkpetemey.com/" target="_blank"
+                  ><i class="fa fa-globe" aria-hidden="true"></i
+                ></a>
+                <a href="https://twitter.com/es_kpet" target="_blank""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/esther-e-a-kpetemey/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/esther_kpet/" target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="https://www.behance.net/agilely" target="_blank""><i class="fa fa-behance" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="map_container">
+              <div class="map">
+                <div id="googleMap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a target="_blank" href="https://portfolio.estherkpetemey.com/"
+              >Esther Kpetemey(Agilely Freelance)</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer section -->
+  </body>
+      <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>-->
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <!-- End Google Map -->
+</html>
