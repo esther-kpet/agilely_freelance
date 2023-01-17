@@ -66,6 +66,38 @@ body {
   align-items: center;
   text-align: center;
 }
+.interactive_container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 8vh;
+  font-size: clamp(2rem, 2.8vw, 5rem);
+  font-weight: bold;
+}
+
+.typewriter {
+  width: 13.5ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #814049;
+  animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: #df557d;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 13.5ch;
+  }
+}
 
 h1,
 h2 {
