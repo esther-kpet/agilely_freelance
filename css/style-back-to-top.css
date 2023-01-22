@@ -3014,7 +3014,7 @@ u,
   }
 }
 mark {
-  background-color: hsla(355, 90%, 61%, 0.2);
+  background-color: hsla(0, 1%, 16%, 0.2);
   background-color: hsla(
     var(--color-accent-h),
     var(--color-accent-s),
@@ -3108,7 +3108,7 @@ mark {
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
 .form-control[aria-invalid="true"] {
-  border-color: hsl(355, 90%, 61%);
+  border-color: hsl(0, 0%, 13%);
   border-color: var(--color-error);
 }
 .form-control[aria-invalid="true"]:focus {
@@ -3135,14 +3135,14 @@ mark {
   --cd-color-1-h: 53;
   --cd-color-1-s: 29%;
   --cd-color-1-l: 95%;
-  --cd-color-2: hsl(330, 13%, 42%);
+  --cd-color-2: hsl(0, 2%, 11%);
   --cd-color-2-h: 330;
   --cd-color-2-s: 13%;
   --cd-color-2-l: 42%;
-  --cd-color-3: hsl(5, 76%, 62%);
-  --cd-color-3-h: 5;
-  --cd-color-3-s: 76%;
-  --cd-color-3-l: 62%;
+  --cd-color-3: hsl(354, 89%, 39%);
+  --cd-color-3-h: 354;
+  --cd-color-3-s: 89%;
+  --cd-color-3-l: 39%;
   --cd-back-to-top-size: 40px;
   --cd-back-to-top-margin: 20px;
   --font-primary: "Bitter", sans-serif;
@@ -3167,7 +3167,7 @@ mark {
   height: var(--cd-back-to-top-size);
   width: 40px;
   width: var(--cd-back-to-top-size);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(221, 219, 219, 0.05);
   background: url(../images/cd-top-arrow.svg) no-repeat center 50%;
   background-color: hsla(0, 1%, 18%, 0.8);
   background-color: hsla(
@@ -3187,7 +3187,7 @@ mark {
   opacity: 1;
 }
 .js .cd-top--fade-out {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .js .cd-top:hover {
   background-color: hsl(0, 0%, 13%);
@@ -3195,7 +3195,7 @@ mark {
   opacity: 1;
 }
 body {
-  background-color: hsl(330, 13%, 42%);
+  background-color: hsl(0, 0%, 13%);
   background-color: var(--cd-color-2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
